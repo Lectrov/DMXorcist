@@ -8,6 +8,11 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# New repositories get a read-only GITHUB_TOKEN by default, so creating a
+# release needs this to be spelled out.
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,7 +21,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Set up JDK 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '17'
