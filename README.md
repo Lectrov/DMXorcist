@@ -85,8 +85,11 @@ can tell at a glance whether an install actually took.
 Push a tag and CI builds the APK and publishes it:
 
 ```bash
-git tag v1.0 && git push origin v1.0
+git tag v1.0
+git push origin v1.0
 ```
+
+(Two separate commands: Windows PowerShell 5.1 has no `&&`.)
 
 The workflow in `.github/workflows/android.yml` builds on every push, and on a
 `v*` tag it attaches `dmxorcist-<tag>.apk` to a GitHub release with generated
