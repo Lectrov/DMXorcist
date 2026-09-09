@@ -1,0 +1,8 @@
+# Normalise line endings. gradlew must keep LF or its shebang breaks on Linux CI.
+* text=auto eol=lf
+*.bat text eol=crlf
+gradlew text eol=lf
+*.jar binary
+*.apk binary
+*.png binary
+*.keystore binary

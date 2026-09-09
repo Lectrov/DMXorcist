@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- FTDI: Enttec Open DMX USB, Enttec DMX USB Pro, FT232RL clones -->
+    <usb-device vendor-id="1027" />
+    <!-- WCH CH340/CH341 -->
+    <usb-device vendor-id="6790" />
+    <!-- Silicon Labs CP210x -->
+    <usb-device vendor-id="4292" />
+    <!-- Prolific PL2303 -->
+    <usb-device vendor-id="1659" />
+</resources>
