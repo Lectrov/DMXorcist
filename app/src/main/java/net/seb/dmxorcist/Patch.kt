@@ -1,4 +1,4 @@
-package net.seb.dmxtester
+package net.seb.dmxorcist
 
 /**
  * Describes a fixture type: how many channels it occupies, and where its

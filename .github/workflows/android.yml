@@ -32,12 +32,12 @@ jobs:
         run: |
           mkdir -p release
           cp app/build/outputs/apk/debug/app-debug.apk \
-             "release/dmx-tester-${GITHUB_REF_NAME}.apk"
+             "release/dmxorcist-${GITHUB_REF_NAME}.apk"
 
       - name: Upload APK as a build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: dmx-tester-debug-apk
+          name: dmxorcist-debug-apk
           path: app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
 

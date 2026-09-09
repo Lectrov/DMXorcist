@@ -1,4 +1,4 @@
-package net.seb.dmxtester.dmx
+package net.seb.dmxorcist.dmx
 
 import com.hoho.android.usbserial.driver.UsbSerialPort
 

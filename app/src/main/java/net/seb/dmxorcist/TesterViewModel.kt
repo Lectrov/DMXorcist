@@ -1,11 +1,11 @@
-package net.seb.dmxtester
+package net.seb.dmxorcist
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import net.seb.dmxtester.dmx.ArtNetOutput
-import net.seb.dmxtester.dmx.DmxEngine
-import net.seb.dmxtester.dmx.DriverMode
-import net.seb.dmxtester.dmx.OutputTarget
+import net.seb.dmxorcist.dmx.ArtNetOutput
+import net.seb.dmxorcist.dmx.DmxEngine
+import net.seb.dmxorcist.dmx.DriverMode
+import net.seb.dmxorcist.dmx.OutputTarget
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

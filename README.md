@@ -1,4 +1,6 @@
-# DMX Tester
+# DMXorcist
+
+*Casts the demons out of your rig.*
 
 A portable DMX512 tester for Android, driving a USB-DMX dongle over OTG or an
 Art-Net node over Wi-Fi.
@@ -57,7 +59,7 @@ the node.
 Grab the APK from the [Releases](../../releases) page and open it on the phone.
 Android will ask you to allow installation from that source.
 
-Then plug the dongle in: Android offers to open DMX Tester and grants the USB
+Then plug the dongle in: Android offers to open DMXorcist and grants the USB
 permission at the same time.
 
 ## Build from source
@@ -87,7 +89,7 @@ git tag v1.0 && git push origin v1.0
 ```
 
 The workflow in `.github/workflows/android.yml` builds on every push, and on a
-`v*` tag it attaches `dmx-tester-<tag>.apk` to a GitHub release with generated
+`v*` tag it attaches `dmxorcist-<tag>.apk` to a GitHub release with generated
 notes.
 
 The published APK is signed with the standard Android debug key. It installs
@@ -121,7 +123,7 @@ through repository secrets if you ever need that.
 ## Layout
 
 ```
-app/src/main/java/net/seb/dmxtester/
+app/src/main/java/net/seb/dmxorcist/
 ├── MainActivity.kt          entry point, keeps the screen awake
 ├── Patch.kt                 fixture profiles, patch, test modes
 ├── TesterViewModel.kt       app state and universe rendering
@@ -135,4 +137,4 @@ app/src/main/java/net/seb/dmxtester/
 
 ## Licence
 
-MIT. See [LICENSE](LICENSE).
+MIT, (c) 2026 Sebastien Lebon. See [LICENSE](LICENSE).

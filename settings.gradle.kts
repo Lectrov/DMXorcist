@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "DmxTester"
+rootProject.name = "DMXorcist"
 include(":app")

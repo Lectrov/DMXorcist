@@ -1,4 +1,4 @@
-package net.seb.dmxtester.ui
+package net.seb.dmxorcist.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.Canvas
@@ -52,13 +52,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import net.seb.dmxtester.BuildConfig
-import net.seb.dmxtester.FixtureProfile
-import net.seb.dmxtester.TestColor
-import net.seb.dmxtester.TestMode
-import net.seb.dmxtester.TesterViewModel
-import net.seb.dmxtester.dmx.DriverMode
-import net.seb.dmxtester.dmx.OutputTarget
+import net.seb.dmxorcist.BuildConfig
+import net.seb.dmxorcist.FixtureProfile
+import net.seb.dmxorcist.TestColor
+import net.seb.dmxorcist.TestMode
+import net.seb.dmxorcist.TesterViewModel
+import net.seb.dmxorcist.dmx.DriverMode
+import net.seb.dmxorcist.dmx.OutputTarget
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
@@ -72,7 +72,7 @@ fun TesterScreen(vm: TesterViewModel) {
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
-        Text("DMX Tester", style = MaterialTheme.typography.headlineSmall)
+        Text("DMXorcist", style = MaterialTheme.typography.headlineSmall)
 
         // ------------------------------------------------------- interface
         Section("Interface") {
@@ -359,7 +359,7 @@ fun TesterScreen(vm: TesterViewModel) {
         // Build stamp: lets you confirm at a glance that the install actually
         // took, rather than relaunching the previous version.
         Text(
-            "DMX Tester v${BuildConfig.VERSION_NAME}  -  build ${BuildConfig.BUILD_TIME}",
+            "DMXorcist v${BuildConfig.VERSION_NAME}  -  build ${BuildConfig.BUILD_TIME}",
             fontFamily = FontFamily.Monospace,
             style = MaterialTheme.typography.labelSmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,

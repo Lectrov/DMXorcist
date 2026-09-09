@@ -1,4 +1,4 @@
-package net.seb.dmxtester.dmx
+package net.seb.dmxorcist.dmx
 
 import android.app.PendingIntent
 import android.content.BroadcastReceiver
@@ -43,7 +43,7 @@ data class EngineStatus(
     val artNetError: String? = null,
 )
 
-private const val ACTION_USB_PERMISSION = "net.seb.dmxtester.USB_PERMISSION"
+private const val ACTION_USB_PERMISSION = "net.seb.dmxorcist.USB_PERMISSION"
 private const val TARGET_PERIOD_MS = 30L      // ~33 frames/s, the practical DMX512 ceiling
 private const val SNAPSHOT_PERIOD_MS = 100L   // universe view refresh rate
 

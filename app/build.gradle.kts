@@ -13,11 +13,11 @@ plugins {
 }
 
 android {
-    namespace = "net.seb.dmxtester"
+    namespace = "net.seb.dmxorcist"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "net.seb.dmxtester"
+        applicationId = "net.seb.dmxorcist"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

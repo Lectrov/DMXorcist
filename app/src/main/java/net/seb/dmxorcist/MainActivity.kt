@@ -1,4 +1,4 @@
-package net.seb.dmxtester
+package net.seb.dmxorcist
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,7 +11,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.ui.Modifier
-import net.seb.dmxtester.ui.TesterScreen
+import net.seb.dmxorcist.ui.TesterScreen
 
 class MainActivity : ComponentActivity() {
 
